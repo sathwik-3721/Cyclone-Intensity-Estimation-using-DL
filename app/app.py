@@ -61,7 +61,7 @@ class Model(nn.Module):
   
 def load_model():
     model = Model()
-    model.load_state_dict(torch.load('C:\\Users\\DELL\\Desktop\\Codegnan\\Cyclone Intensity Estimation using Deep Learning\\cyclone_model', map_location=torch.device('cuda')))
+    model.load_state_dict(torch.load('Model File(Architecture and Saved Model)/cyclone_model', map_location=torch.device('cuda')))
     model.eval()
     return model
 
